@@ -1,0 +1,25 @@
+<div class="conteiner text-center">
+  <div class = "display-6">
+    Pokedex
+  </div>
+  <div class="row">
+    <div class="col">
+      <img [src]="pkmn.message"
+
+      width="200px"
+      class="shadow rounded_corner"
+      >
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col">
+
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col">
+      <button class="btn btn-primary" (click)=previousPkmn() >Previous</button>
+      <button class="btn btn-primary" (click)=nextPkmn() >Next</button>
+    </div>
+  </div>
+</div>
