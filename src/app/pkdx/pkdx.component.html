@@ -13,7 +13,9 @@
   </div>
   <div class="row m-3">
     <div class="col">
-
+      <span *ngFor="let name of getName()">
+        {{name | titlecase}}
+    </span>
     </div>
   </div>
   <div class="row m-3">

@@ -13,7 +13,7 @@ export class PkmnService {
 
   getRandonPkmn():Observable<Pkmn>{
 
-    return this.http.get<Pkmn>("https://pokeapi.co/api/v2/pokemon/1")
+    return this.http.get<Pkmn>("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png")
 
   }
 

@@ -21,7 +21,7 @@ export class PkdxComponent implements OnInit {
   loadPkmn(){
     this.PkmnService.getRandonPkmn().subscribe(
       {
-
+        next : pkmn = this.pkmn = pkmn
       }
     );
   }
@@ -42,6 +42,10 @@ export class PkdxComponent implements OnInit {
 
       }
     );
+  }
+
+  getName(): string{
+    return this.pkmn.message.split("/")[4];
   }
 
 
